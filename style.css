@@ -10,6 +10,14 @@ div#navbar-right {
     margin-left: auto;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.column-strong {
+    font-weight: bold;
+}
+
 a#navbar-title {
     font-weight: lighter;
     font-size: 1.2em;
