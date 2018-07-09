@@ -1,0 +1,13 @@
+div#navbar-right {
+    margin-left: auto;
+}
+
+a#navbar-title-desktop {
+    font-weight: lighter;
+    font-size: 1.2em;
+}
+
+a#navbar-title-mobile {
+    font-weight: lighter;
+    font-size: 1.2em;
+}

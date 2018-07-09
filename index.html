@@ -8,25 +8,28 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" rel="stylesheet" >
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.map" rel="stylesheet" >
+    <link href="style.css" rel="stylesheet" >
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 </head>
 <body>
 <div id="app">
-    <div>
-        <div>
-            <nav class="navbar is-fixed-top has-shadow is-spaced" id="navbar">
-                <div class="container">
-                    <div class="navbar-brand">
-                        <a href="/" class="navbar-item router-link-exact-active is-active">
-                            <i class="material-icons logo">face</i>
-                            <span class="title">Jesús David García Madriz</span>
-                        </a>
+    <nav class="navbar has-shadow is-spaced" id="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="/" class="navbar-item is-hidden-mobile" id="navbar-title-desktop">Jesús David García Madriz</a>
+                <a href="/" class="navbar-item is-hidden-desktop" id="navbar-title-mobile">Jesús García Madriz</a>
+                <div id="navbar-right">
+                    <div class="navbar-item">
+                        <div class="field is-grouped is-grouped-multiline">
+                            <p class="control">
+                                <a href="#" class="button is-primary">Contact me</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </nav>
+            </div>
         </div>
-        <div></div>
-    </div>
+    </nav>
 </div>
 </body>
 </html>
