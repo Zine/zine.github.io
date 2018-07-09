@@ -46,7 +46,6 @@ a#navbar-title {
     animation-timing-function: ease;
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
-    opacity: 0;
 }
 
 #animationAdd {
