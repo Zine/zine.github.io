@@ -10,14 +10,16 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.map" rel="stylesheet" >
     <link href="style.css" rel="stylesheet" >
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
 </head>
 <body>
 <div id="app">
-    <nav class="navbar has-shadow is-spaced" id="navbar">
-        <div class="container">
-            <div class="navbar-brand">
-                <a href="/" class="navbar-item is-hidden-mobile" id="navbar-title-desktop">Jesús David García Madriz</a>
-                <a href="/" class="navbar-item is-hidden-desktop" id="navbar-title-mobile">Jesús García Madriz</a>
+    <div>
+        <nav class="navbar has-shadow is-spaced" id="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a href="/" class="navbar-item" id="navbar-title">Jesús David García Madriz</a>
+                </div>
                 <div id="navbar-right">
                     <div class="navbar-item">
                         <div class="field is-grouped is-grouped-multiline">
@@ -28,8 +30,28 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
+    <div>
+        <section class="hero is-primary is-medium">
+            <div class="hero-bg" id="animationBG">
+                <div class="hero-head"></div>
+                <div class="hero-body">
+                    <div class="container">
+                        <h1 class="title" id="animationTitle">Welcome to my profile</h1>
+                        <h2 class="subtitle" id="animationSub">Track, discover, review and recommend video games.</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div>
+                    <h1 class="title" id="title-lighter">Personal Information</h1>
+                </div>
+            </div>
+        </section>
+    </div>
 </div>
 </body>
 </html>
