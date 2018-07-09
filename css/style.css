@@ -25,10 +25,35 @@ a#navbar-title {
 }
 
 #animationBG {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: ease;
     background-image: linear-gradient(
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)),
     url("/images/1.png")
+}
+
+#animationTitle {
+    animation-name: moveLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+
+#animationSub {
+    animation-name: moveLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.hero-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 @media screen and (max-width: 1087px) {
