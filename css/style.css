@@ -26,6 +26,7 @@ a#navbar-title {
 
 .column-auto {
     margin: auto;
+    text-align: center;
 }
 
 #animationBG {
@@ -78,9 +79,14 @@ a#navbar-title {
 }
 
 @keyframes move {
-    0% {background-position: 0px 0px, 0 0, 0 0}
-    100% {background-position: -100px 0px, 0 0, 0 0}
+    0% {
+        background-position: 0px 0px, 0 0, 0 0
+    }
+    100% {
+        background-position: -100px 0px, 0 0, 0 0
+    }
 }
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -89,6 +95,7 @@ a#navbar-title {
         opacity: 1;
     }
 }
+
 @keyframes moveRight {
     from {
         transform: translateX(-60px);
@@ -99,6 +106,7 @@ a#navbar-title {
         opacity: 1;
     }
 }
+
 @keyframes moveLeft {
     from {
         transform: translateX(80px);
