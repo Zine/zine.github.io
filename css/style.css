@@ -34,6 +34,10 @@ a#navbar-title {
     url("/images/1.png")
 }
 
+#blue-heart {
+    font-size: medium;
+}
+
 #animationTitle {
     animation-name: moveLeft;
     animation-duration: 1.2s;
