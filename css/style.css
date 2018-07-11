@@ -138,3 +138,7 @@ a#navbar-title {
         font-size: 1em;
     }
 }
+
+.section {
+    padding: 2rem 1.5rem !important;
+}
