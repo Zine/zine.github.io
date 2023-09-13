@@ -1,6 +1,9 @@
+import { useTranslation } from "react-i18next";
 import Banner0Picture from "../assets/banner-0.png"
 
 const SectionBanner = () => {
+    const { t, i18n } = useTranslation();
+
     return (
         <>
             <section
@@ -31,14 +34,14 @@ const SectionBanner = () => {
                 <div className="relative z-10 container mx-auto px-6 pt-20 lg:pt-48 pb-20 lg:pb-48">
                     <div className="max-w-3xl text-center mx-auto">
                         <h2
-                            className="heading-xlarge mb-6 break-word text-center"
+                            className="heading-xlarge mb-6 break-word text-center hyphens-none"
                             style={{
                                 color: "rgb(17, 24, 39)",
                                 fontFamily: "Cabin, sans-serif",
                                 fontWeight: 700
                             }}
                         >
-                            Transform Your IT Strategy
+                            {t('banner_message_1')}
                         </h2>
                         <p
                             className="body-large"
@@ -48,7 +51,7 @@ const SectionBanner = () => {
                                 fontWeight: 400
                             }}
                         >
-                            Maximize your business potential with expert IT consulting services.
+                            {t('banner_message_2')}
                         </p>
                     </div>
                 </div>

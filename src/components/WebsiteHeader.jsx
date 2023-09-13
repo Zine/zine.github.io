@@ -111,30 +111,6 @@ const WebsiteHeader = () => {
                         </div>
                     </div>
                     <div className="flex justify-end whitespace-nowrap">
-                        <div className="ml-auto lg:hidden">
-                            <button
-                                className="inline-flex items-center justify-center p-2 rounded-md focus:outline-none"
-                                style={{ color: "rgb(17, 24, 39)" }}
-                            >
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    viewBox="0 0 24 24"
-                                    width={24}
-                                    height={24}
-                                    className="block h-5 w-5"
-                                    aria-hidden="true"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="1.5"
-                                        d="M4 6h16M4 12h16M4 18h16"
-                                    />
-                                </svg>
-                            </button>
-                        </div>
                     </div>
                 </div>
             </header>
