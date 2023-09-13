@@ -1,15 +1,14 @@
-import SectionBanner from "./components/SectionBanner"
-import SectionContact from "./components/SectionContact"
-import SectionHero from "./components/SectionHero"
-import SectionList from "./components/SectionList"
-import WebsiteFooter from "./components/WebsiteFooter"
-import WebsiteHeader from "./components/WebsiteHeader"
+import SectionBanner from './components/SectionBanner'
+import SectionContact from './components/SectionContact'
+import SectionHero from './components/SectionHero'
+import SectionList from './components/SectionList'
+import WebsiteFooter from './components/WebsiteFooter'
+import WebsiteHeader from './components/WebsiteHeader'
 
-function App() {
-
+function App () {
   return (
     <>
-      <main className="min-h-full w-full flex flex-col scroll-smooth hyphens-auto">
+      <main className="min-h-full w-full flex flex-col scroll-smooth hyphens-none">
         <WebsiteHeader />
         <SectionBanner />
         <SectionHero />

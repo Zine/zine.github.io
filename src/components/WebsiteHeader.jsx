@@ -1,19 +1,19 @@
 const WebsiteHeader = () => {
-    return (
+  return (
         <>
             <header
                 id="website-header"
                 className="!z-[2000]"
-                style={{ backgroundColor: "rgb(255, 255, 255)", color: "rgb(17, 24, 39)" }}
+                style={{ backgroundColor: 'rgb(255, 255, 255)', color: 'rgb(17, 24, 39)' }}
             >
                 <div
                     className="grid items-center lg:gap-6 xl:gap-10 mx-auto pt-6 pb-6 container"
-                    style={{ gridTemplateColumns: "1fr auto 1fr" }}
+                    style={{ gridTemplateColumns: '1fr auto 1fr' }}
                 >
                     <div className="lg:w-auto whitespace-nowrap">
                         <ul className="lg:flex items-center gap-x-4 gap-y-2 flex-wrap hidden">
                             <li>
-                                <a target="_blank" href="https://instagram.com/jesusgarciamadriz">
+                                <a target="_blank" href="https://instagram.com/jesusgarciamadriz" rel="noreferrer">
                                     <div className="flex justify-center items-center">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -22,7 +22,7 @@ const WebsiteHeader = () => {
                                             width={24}
                                             height={24}
                                             className="w-8 h-8"
-                                            style={{ color: "rgb(17, 24, 39)" }}
+                                            style={{ color: 'rgb(17, 24, 39)' }}
                                         >
                                             <path
                                                 fillRule="evenodd"
@@ -34,7 +34,7 @@ const WebsiteHeader = () => {
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" href="https://facebook.com/JesusDavidGarciaMadriz">
+                                <a target="_blank" href="https://facebook.com/JesusDavidGarciaMadriz" rel="noreferrer">
                                     <div className="flex justify-center items-center">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +43,7 @@ const WebsiteHeader = () => {
                                             width={24}
                                             height={24}
                                             className="w-8 h-8"
-                                            style={{ color: "rgb(17, 24, 39)" }}
+                                            style={{ color: 'rgb(17, 24, 39)' }}
                                         >
                                             <path
                                                 fillRule="evenodd"
@@ -55,7 +55,7 @@ const WebsiteHeader = () => {
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" href="https://twitter.com/JDGM93">
+                                <a target="_blank" href="https://twitter.com/JDGM93" rel="noreferrer">
                                     <div className="flex justify-center items-center">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +64,7 @@ const WebsiteHeader = () => {
                                             width={24}
                                             height={24}
                                             className="w-8 h-8"
-                                            style={{ color: "rgb(17, 24, 39)" }}
+                                            style={{ color: 'rgb(17, 24, 39)' }}
                                         >
                                             <path d="M22 5.92396c-.7352.32682-1.5265.54727-2.3567.64592.8477-.50748 1.4976-1.31133 1.8042-2.27026-.7929.47053-1.6707.81196-2.6057.99628C18.0936 4.49855 17.0271 4 15.8469 4c-2.2658 0-4.1029 1.83708-4.1029 4.10328 0 .32114.0362.63415.1064.93498-3.41027-.17132-6.43404-1.8046-8.45787-4.28719-.35321.60573-.55539 1.31052-.55539 2.06321 0 1.42338.72428 2.6795 1.8253 3.41512-.67231-.0215-1.30523-.2062-1.85859-.51355-.00041.01705-.00041.03451-.00041.05197 0 1.98768 1.41445 3.64578 3.29172 4.02328-.34427.0934-.70682.1437-1.08113.1437-.2647 0-.52169-.0255-.77219-.0738.52251 1.63 2.03764 2.8167 3.8329 2.8496-1.4043 1.1006-3.17317 1.7566-5.09591 1.7566-.33088 0-.6577-.0194-.97883-.0576 1.81637 1.1648 3.97296 1.8436 6.28991 1.8436 7.54769 0 11.67449-6.2522 11.67449-11.67451 0-.17782-.0037-.35524-.0114-.53143.8014-.57731 1.4973-1.30037 2.047-2.1233Z" />
                                         </svg>
@@ -72,7 +72,7 @@ const WebsiteHeader = () => {
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" href="https://linkedin.com/jesusdavidgarciamadriz">
+                                <a target="_blank" href="https://linkedin.com/jesusdavidgarciamadriz" rel="noreferrer">
                                     <div className="flex justify-center items-center">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +81,7 @@ const WebsiteHeader = () => {
                                             width={24}
                                             height={24}
                                             className="w-8 h-8"
-                                            style={{ color: "rgb(17, 24, 39)" }}
+                                            style={{ color: 'rgb(17, 24, 39)' }}
                                         >
                                             <path
                                                 fillRule="evenodd"
@@ -100,9 +100,9 @@ const WebsiteHeader = () => {
                                 <h1
                                     className="heading-small lg:heading-medium overflow-hidden whitespace-nowrap overflow-ellipsis"
                                     style={{
-                                        color: "rgb(17, 24, 39)",
-                                        fontFamily: "Cabin, sans-serif",
-                                        fontWeight: 700
+                                      color: 'rgb(17, 24, 39)',
+                                      fontFamily: 'Cabin, sans-serif',
+                                      fontWeight: 700
                                     }}
                                 >
                                     Zine
@@ -116,7 +116,7 @@ const WebsiteHeader = () => {
             </header>
 
         </>
-    );
+  )
 }
 
-export default WebsiteHeader;
+export default WebsiteHeader

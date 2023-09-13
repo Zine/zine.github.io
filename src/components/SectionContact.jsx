@@ -1,25 +1,28 @@
+import { useTranslation } from 'react-i18next'
+
 const SectionContact = () => {
-    return (
+  const { t } = useTranslation()
+
+  return (
         <>
             <section
                 id="contact-3"
                 className="flex flex-none flex-shrink-0 relative z-10 items-center"
-                style={{ minHeight: "calc(100vh - 0px)" }}
+                style={{ minHeight: 'calc(100vh - 0px)' }}
             >
                 <div className="absolute inset-0 pointer-events-none">
                     <div
                         className="absolute inset-0 z-10"
-                        style={{ backgroundColor: "rgb(255, 255, 255)" }}
+                        style={{ backgroundColor: 'rgb(255, 255, 255)' }}
                     />
                 </div>
                 <div className="relative z-10 container mx-auto pt-12 lg:pt-20 pb-12 lg:pb-20">
                     <div className="flex flex-col w-full gap-10 lg:gap-20 lg:flex-row">
                         <div className="w-full lg:w-1/2 lg:mt-10">
-                            <div className="rich-text-block" style={{ color: "rgb(17, 24, 39)" }}>
-                                <h3>Contact Us Today</h3>{" "}
+                            <div className="rich-text-block" style={{ color: 'rgb(17, 24, 39)' }}>
+                                <h3>{t('contact_us_today')}</h3>
                                 <p>
-                                    Fill out the form below to get in touch with our IT consulting team.
-                                    We are ready to help you with any technology needs you may have.
+                                    {t('contact_us_today_msg')}
                                 </p>
                             </div>
                         </div>
@@ -29,36 +32,36 @@ const SectionContact = () => {
                                     <div className="flex-1">
                                         <label
                                             className="mb-1 body-small"
-                                            style={{ color: "rgb(17, 24, 39)" }}
+                                            style={{ color: 'rgb(17, 24, 39)' }}
                                         >
-                                            Name
+                                            {t('contact_us_name')}
                                         </label>
                                         <input
                                             type="text"
                                             className="input border-none !shadow-none !ring-transparent !placeholder-current"
                                             defaultValue=""
                                             style={{
-                                                borderRadius: 8,
-                                                backgroundColor: "rgba(0, 0, 0, 0.07)",
-                                                color: "rgb(17, 24, 39)"
+                                              borderRadius: 8,
+                                              backgroundColor: 'rgba(0, 0, 0, 0.07)',
+                                              color: 'rgb(17, 24, 39)'
                                             }}
                                         />
                                     </div>
                                     <div className="flex-1">
                                         <label
                                             className="mb-1 body-small"
-                                            style={{ color: "rgb(17, 24, 39)" }}
+                                            style={{ color: 'rgb(17, 24, 39)' }}
                                         >
-                                            E-mail
+                                            {t('contact_us_email')}
                                         </label>
                                         <input
                                             type="text"
                                             className="input border-none !shadow-none !ring-transparent !placeholder-current"
                                             defaultValue=""
                                             style={{
-                                                borderRadius: 8,
-                                                backgroundColor: "rgba(0, 0, 0, 0.07)",
-                                                color: "rgb(17, 24, 39)"
+                                              borderRadius: 8,
+                                              backgroundColor: 'rgba(0, 0, 0, 0.07)',
+                                              color: 'rgb(17, 24, 39)'
                                             }}
                                         />
                                     </div>
@@ -66,63 +69,63 @@ const SectionContact = () => {
                                 <div className="mb-4">
                                     <label
                                         className="mb-1 body-small"
-                                        style={{ color: "rgb(17, 24, 39)" }}
+                                        style={{ color: 'rgb(17, 24, 39)' }}
                                     >
-                                        Message
+                                        {t('contact_us_message')}
                                     </label>
                                     <textarea
                                         className="input border-none !shadow-none !ring-transparent !placeholder-current"
                                         placeholder=""
                                         rows={5}
                                         style={{
-                                            borderRadius: 8,
-                                            backgroundColor: "rgba(0, 0, 0, 0.07)",
-                                            color: "rgb(17, 24, 39)"
+                                          borderRadius: 8,
+                                          backgroundColor: 'rgba(0, 0, 0, 0.07)',
+                                          color: 'rgb(17, 24, 39)'
                                         }}
-                                        defaultValue={""}
+                                        defaultValue={''}
                                     />
                                 </div>
                                 <div className="flex flex-col md:flex-row justify-between items-start gap-4">
                                     <div
                                         className="text-xs max-w-sm text-gray-500"
-                                        style={{ color: "rgb(17, 24, 39)" }}
+                                        style={{ color: 'rgb(17, 24, 39)' }}
                                     >
-                                        This site is protected by reCAPTCHA and the Google
+                                        {t('captcha_1')}
                                         <a
                                             target="_blank"
                                             className="font-bold"
-                                            style={{ color: "rgb(17, 24, 39)" }}
-                                            href="https://policies.google.com/privacy"
+                                            style={{ color: 'rgb(17, 24, 39)' }}
+                                            href="https://policies.google.com/privacy" rel="noreferrer"
                                         >
-                                            {" "}
-                                            Privacy Policy
-                                        </a>{" "}
+                                            {' '}
+                                            {t('captcha_2')}
+                                        </a>{' '}
                                         and
                                         <a
                                             target="_blank"
                                             className="font-bold"
-                                            style={{ color: "rgb(17, 24, 39)" }}
-                                            href="https://policies.google.com/terms"
+                                            style={{ color: 'rgb(17, 24, 39)' }}
+                                            href="https://policies.google.com/terms" rel="noreferrer"
                                         >
-                                            {" "}
-                                            Terms of Service
-                                        </a>{" "}
+                                            {' '}
+                                            {t('captcha_3')}
+                                        </a>{' '}
                                         apply.
                                     </div>
                                     <button
                                         type="submit"
                                         className="button lg w-36 mt-2 md:mt-0"
                                         style={{
-                                            borderWidth: 2,
-                                            borderStyle: "solid",
-                                            boxShadow: "none",
-                                            backgroundColor: "rgb(0, 0, 0)",
-                                            color: "rgb(255, 255, 255)",
-                                            borderRadius: 8,
-                                            borderColor: "rgb(0, 0, 0)"
+                                          borderWidth: 2,
+                                          borderStyle: 'solid',
+                                          boxShadow: 'none',
+                                          backgroundColor: 'rgb(0, 0, 0)',
+                                          color: 'rgb(255, 255, 255)',
+                                          borderRadius: 8,
+                                          borderColor: 'rgb(0, 0, 0)'
                                         }}
                                     >
-                                        Send
+                                        {t('contact_us_send')}
                                     </button>
                                 </div>
                                 <div className="hidden">
@@ -131,9 +134,9 @@ const SectionContact = () => {
                                             className="grecaptcha-badge"
                                             data-style="inline"
                                             style={{
-                                                width: 256,
-                                                height: 60,
-                                                boxShadow: "gray 0px 0px 5px"
+                                              width: 256,
+                                              height: 60,
+                                              boxShadow: 'gray 0px 0px 5px'
                                             }}
                                         >
                                             <div className="grecaptcha-logo">
@@ -155,18 +158,18 @@ const SectionContact = () => {
                                                 name="g-recaptcha-response"
                                                 className="g-recaptcha-response"
                                                 style={{
-                                                    width: 250,
-                                                    height: 40,
-                                                    border: "1px solid rgb(193, 193, 193)",
-                                                    margin: "10px 25px",
-                                                    padding: 0,
-                                                    resize: "none",
-                                                    display: "none"
+                                                  width: 250,
+                                                  height: 40,
+                                                  border: '1px solid rgb(193, 193, 193)',
+                                                  margin: '10px 25px',
+                                                  padding: 0,
+                                                  resize: 'none',
+                                                  display: 'none'
                                                 }}
-                                                defaultValue={""}
+                                                defaultValue={''}
                                             />
                                         </div>
-                                        <iframe style={{ display: "none" }} />
+                                        <iframe style={{ display: 'none' }} />
                                     </div>
                                 </div>
                             </form>
@@ -175,7 +178,7 @@ const SectionContact = () => {
                 </div>
             </section>
         </>
-    );
+  )
 }
 
-export default SectionContact;
+export default SectionContact
