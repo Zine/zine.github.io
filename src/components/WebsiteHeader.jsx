@@ -1,4 +1,8 @@
+import { useTranslation } from 'react-i18next'
+
 const WebsiteHeader = () => {
+  const { t } = useTranslation()
+
   return (
         <>
             <header
@@ -105,7 +109,7 @@ const WebsiteHeader = () => {
                                       fontWeight: 700
                                     }}
                                 >
-                                    Zine
+                                    {t('zine')}
                                 </h1>
                             </a>
                         </div>

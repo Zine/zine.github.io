@@ -1,4 +1,8 @@
+import { useTranslation } from 'react-i18next'
+
 const WebsiteFooter = () => {
+  const { t } = useTranslation()
+
   return (
         <>
             <footer
@@ -24,7 +28,7 @@ const WebsiteFooter = () => {
                                       fontWeight: 700
                                     }}
                                 >
-                                    Zine
+                                    {t('zine')}
                                 </h3>
                             </div>
                         </div>
